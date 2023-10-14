@@ -1,0 +1,754 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* ************************************************* section 1 ****************************************************** */
+
+.section1{
+    height: 90vh;
+    margin: 2% 5%;
+    padding: 0 30px;
+    background-image: url(../Images/enlarge_woodmart-jewelry-wordpress-theme3.png);
+    background-size: 100% 100%;
+    box-shadow: 1px 1px 20px 10px rgb(186, 186, 186);
+    
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo{
+    width: 200px;
+    height: 50px;
+    margin-top: 18px;
+}
+
+.header ul{
+    list-style-type: none;
+    line-height: 80px;
+}
+
+.header ul li{
+    display: inline;
+    margin-left: 20px;
+    padding: 2px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+}
+
+.header .ul1 li::before{
+    content: "";
+    width: 98%;
+    height: 160%;
+    position: absolute;
+    top: -6px;
+    left: 0;
+    transform: scaley(0);
+    transition: 0.2s;
+    border-width: 0px 2px;
+    border-color: #f9f9f9;
+    border-style: solid;
+}
+
+.header .ul1 li:hover::before{
+    transform: scaley(1);
+}
+
+.header .ul1 li::after{
+    content: "";
+    width: 100%;
+    height: 140%;
+    position: absolute;
+    top: -6px;
+    left: 0;
+    transform: scalex(0);
+    transition: 0.2s;
+    border-width: 2px 0px;
+    border-color: #f9f9f9;
+    border-style: solid;
+    transform-origin: left;
+}
+
+.header .ul1 li:hover::after{
+    transform: scalex(1);
+    transition-delay: 0.2s;
+}
+
+.header ul li a{
+    text-decoration: none;
+    color: #f9f9f9;
+}
+
+.header .ul1 li a{
+    padding: 8px;
+}
+
+.header .ul2 li i{
+    font-size: 15px;
+}
+
+.cart i{
+    position: relative;
+}
+
+.cart i::after{
+    position: absolute;
+    content: "0";
+    background-color: #b4b3b3;
+    color: #f9f9f9;
+    width: 4px;
+    height: 6px;
+    border-radius: 50%;
+    padding: 4px;
+    font-size: 10px;
+    top: 6px;
+    right: -11px;
+}
+
+.text{
+    width: 500px;
+    margin-left: 750px;
+    margin-top: 100px;
+}
+
+.p1{
+    text-transform: capitalize;
+    font-size: 26px;
+    color: #f9f9f9;
+    font-family: 'Metal', cursive;
+}
+
+.text1{
+    text-transform: uppercase;
+    font-size: 50px;
+    color: #f9f9f9;
+    font-family: 'Marcellus', serif;
+}
+
+.text2{
+    font-weight: 100;
+    font-size: 16px;
+    color: #f9f9f9;
+    margin-top: 20px;
+    font-family: 'Marcellus', serif;
+}
+
+.section1 button{
+    width: 100px;
+    height: 40px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 11px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 1px solid #f9f9f9;
+}
+
+.shop-now{
+    background-color: #f9f9f9;
+    color: black;
+}
+
+.view{
+    background-color: transparent;
+    color: #f9f9f9;
+    margin-left: 15px;
+}
+
+.section1 button:hover{
+    opacity: 0.8;
+}
+
+.shop{
+    position: relative;
+}
+
+.dropdown{
+    width: 650px;
+    background-color: #f9f9f9;
+    left: 0px;
+    font-size: 20px;
+    font-family: 'Marcellus', serif;
+    overflow: auto;
+    position: relative;
+    position: absolute;
+    top: 28px;
+    transform: scale(0);
+    padding: 30px;
+}
+
+.shop:hover .dropdown{
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+.drop-content1, .drop-content2{
+    float: left;
+    margin-right: 50px;
+}
+
+.dropdown p{
+    line-height: 50px;
+}
+
+.dropdown .drop-content1 a, .dropdown .drop-content2 a{
+    text-decoration: none;
+    color: #ababab;
+}
+
+.dropdown p:hover{
+    color: #5c5a5a;
+    transform: scale(1.1);
+}
+
+.dropdown p:hover a{
+    color: #767676;
+}
+
+.drop-img{
+    width: 250px;
+    height: 150px;
+    background-image: url(../Images/shop.jpg);
+    background-size: 100% 100%;
+    position: absolute;
+    top: 30px;
+    right: 35px;
+}
+
+.Bracelets:hover ~ .drop-img {
+    z-index: 3;
+    background-image: url(../Images/bracelets.jpg);
+    background-size: 100% 100%;
+}
+
+.pendants:hover ~ .drop-img {
+    z-index: 3;
+    background-image: url(../Images/pendants.jpg);
+    background-size: 100% 100%;
+}
+
+.Necklaces:hover ~ .drop-img {
+    z-index: 3;
+    background-image: url(../Images/necklace.jpg);
+    background-size: 100% 100%;
+}
+
+.Rings:hover ~ .drop-img {
+    z-index: 3;
+    background-image: url(../Images/rings1.jpg);
+    background-size: 100% 100%;
+}
+
+.Studs:hover ~ .drop-img {
+    z-index: 3;
+    background-image: url(../Images/studs1.webp);
+    background-size: 100% 100%;
+}
+
+.Earrings:hover ~ .drop-img {
+    z-index: 3;
+    background-image: url(../Images/earrings.jpg);
+    background-size: 100% 100%;
+}
+
+
+/* ************************************************* section 2 ****************************************************** */
+
+.section2{
+    margin: 80px 0;
+}
+
+.title2{
+    width: 320px;
+    margin: auto;
+    text-align: center;
+}
+
+.title2 h2{
+    color: #b4b3b3;
+    font-size: 45px;
+    font-family: 'Marcellus', serif;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.line2{
+    width: 50%;
+    height: 2px;
+    background-color: #b4b3b3;
+    margin: auto;
+}
+
+.new-collection{
+    width: 90%;
+    margin:  30px auto;
+    overflow: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.new-collection .collection{
+    width: 24%;
+    height: 400px;
+    float: left;
+    position: relative;
+}
+
+.collection img{
+    width: 100%;
+    height: 80%;
+}
+
+.collection p{
+    font-size: 20px;
+    color: #b4b3b3;
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+
+.collection span{
+    font-weight: bold;
+    font-size: 26px;
+    margin-top: 10px;
+    text-transform: capitalize;
+    font-family: 'Marcellus', serif;
+}
+
+.collection .icon{
+    width: 30px;
+    height: 30px;
+    background-color: #b78e93;
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+    color: #f9f9f9;
+    visibility: hidden;
+}
+
+
+.collection:hover .icon{
+    visibility: visible;
+}
+
+
+.handcraft{
+    width: 100%;
+    height: 400px;
+    padding: 50px 5%;
+    overflow: auto;
+    display: flex;
+}
+
+.quote{
+    width: 50%;
+    height: 100%;
+    padding: 50px;
+    position: relative;
+    background: -webkit-linear-gradient( #b78e93a1, #b78e93);
+}
+
+.quote i{
+    color: #b78e93;
+    font-size: 80px;
+    position: absolute;
+    top: 55px;
+}
+
+.quote-title{
+    width: 250px;
+    color: #f9f9f9;
+    font-size: 38px;
+    margin-left: 90px;
+    margin-top: 5px;
+    font-family: 'Marcellus', serif;
+}
+
+.quote-line{
+    height: 3px;
+    width: 80px;
+    background-color: #b78e93;
+    margin-top: -5px
+}
+
+
+.quote p{
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.quote .lines{
+    width: 250px;
+    height: 5px;
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+}
+
+.quote .lines span{
+    display: inline-block;
+    width: 50px;
+    height: 3px;
+    margin-left: 20px;
+    background-color: #f9f9f9;
+    background: -webkit-linear-gradient(left, #b4b3b3, #f9f9f9);
+}
+
+.image{
+    width: 23%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.img1{
+    background-image: url(../Images/img1.jpg);
+    background-size: 100% 100%;
+    margin-left: 27px;
+}
+
+.img2{
+    background-image: url(../Images/img2.jpg);
+    background-size: 100% 100%;
+    margin-left: auto;
+}
+
+.image:hover{
+    transform: scale(1.1);
+    
+}
+
+
+.services{
+    width: 90%;
+    height: 100px;
+    margin: 20px auto;
+    display: flex;
+}
+
+.service{
+    width: 20%;
+    height: 110px;
+    text-align: center;
+    border-right: 2px solid #b4b3b3;
+}
+
+.last{
+    border: none;
+}
+
+.service-img{
+    height: 70px;
+    background-repeat: no-repeat;
+    background-position: center 0;
+    transition: 0.5s;
+}
+
+.shipping{
+    background-image: url(../Images/Untitled-presentation2.png);
+    background-position: center -66px;
+}
+.service:hover .shipping{
+    background-position: center -144px;
+}
+
+.best-price{
+    background-image: url(../Images/money.png);
+    background-position: center -40px;
+}
+.service:hover .best-price{
+    background-position: center -126px;
+}
+
+.customer-service{
+    background-image: url(../Images/customer2.png);
+    background-position: center -46px;
+}
+.service:hover .customer-service{
+    background-position: center -128px;
+}
+
+.quality{
+    background-image: url(../Images/quality.png);
+    background-position: center -39px;
+}
+.service:hover .quality{
+    background-position: center -116px;
+}
+
+.return-policy{
+    background-image: url(../Images/return.png);
+    background-position: center -61px;
+}
+.service:hover .return-policy{
+    background-position: center -125px;
+}
+
+.service-name{
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.service-desc{
+    color: #b4b3b3;
+    font-size: 15px;
+}
+
+/* ************************************************* section 3 ****************************************************** */
+.section3{
+    height: 1500px;
+    width: 90%;
+    margin: auto;
+}
+
+.title3{
+    width: 270px;
+    margin: auto;
+    text-align: center;
+}
+
+.title3 h2{
+    color: #b4b3b3;
+    font-size: 45px;
+    font-family: 'Marcellus', serif;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.line3{
+    width: 50%;
+    height: 2px;
+    background-color: #b4b3b3;
+    margin: auto;
+    margin-top: -1px;
+}
+
+.section3 .products{
+    width: 100%;
+    height: 500px;
+    margin-top: 40px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.section3 .products2{
+    margin-top: 120px;
+}
+
+.products .product{
+    position: relative;
+}
+
+.product i{
+    color: rgb(230, 216, 30);
+    margin-top: 10px;
+}
+
+.product-img{
+    height: 80%;
+    width: 100%;
+    position: relative;
+}
+
+.product-name{
+    font-size: 18px;
+    font-family: 'Marcellus', serif;
+    color: black;
+    margin-top: 15px;
+}
+
+.product .fav{
+    color: #b4b3b3;
+    position: absolute;
+    right: 10px;
+    bottom: 40px;
+}
+
+.price{
+    font-size: 20px;
+    color: #b4b3b3;
+}
+
+.img-overlay{
+    height: 80%;
+    width: 100%;
+    transform: scalex(0);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.img-overlay img{
+    height: 100%;
+    width: 100%;
+}
+
+.img-overlay button{
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    font-family: 'Marcellus', serif;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-40%);
+    text-align: center;
+    line-height: 40px;
+    border: none;
+    text-transform: uppercase;
+}
+
+.img-overlay button i{
+    font-size: 20px;
+    color: #b78e93;
+}
+
+.product:hover .img-overlay{
+    transform: scalex(1);
+    
+    transition: 0.5s;
+}
+
+
+/* ************************************************* footer ****************************************************** */
+.footer{
+    height: 500px;
+    width: 100%;
+    background-color: #e6e5e5;
+    padding: 20px;
+    overflow: auto;
+    background: -webkit-linear-gradient(#b78e9389, #b78e93);
+    background-image: url(../Images/second-hand-jewellery-guide-thbaker.jpg);
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.footer-overlay{
+    height: 500px;
+    width: 100%;
+    background: rgba(71, 71, 71, 0.5);
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 30px 0;
+}
+
+.footer table{
+    width: 60%;
+    line-height: 24px;
+    text-align: center;
+    padding: 5px;
+}
+
+.footer table a{
+   text-decoration: none;
+   color: #f9f9f9;
+}
+
+
+.footer table th{
+    text-transform: uppercase;
+    font-size: 26px;
+    font-family: 'Marcellus', serif;
+    height: 50px;
+    color: #f9f9f9;
+}
+
+.footer table td{
+    font-size: 14px;
+    font-family: 'Marcellus', serif;
+}
+
+.footer table a:hover{
+    text-decoration: underline;
+}
+
+.footer-content{
+    float: right;
+    margin-right: 100px;
+    margin-top: -225px;
+}
+
+.footer-icons{
+    font-size: 35px;
+}
+
+.footer-icons a{
+    text-decoration: none;
+    color: #f9f9f9;
+}
+
+.email p{
+    font-size: 14px;
+    font-family: 'Marcellus', serif;
+    margin-top: 30px;
+    color: #f9f9f9;
+}
+
+.email input{
+    background-color: transparent;
+    border-radius: 40px;
+    height: 50px;
+    width: 300px;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border: 2px solid #f9f9f9;
+}
+
+::placeholder{
+    color: #f9f9f9;
+    opacity: 0.6;
+}
+
+.email button{
+    width: 100px;
+    height: 50px;
+    background-color: #f9f9f9;
+    border: none;
+    border-radius: 40px;
+    font-size: 15px;
+    font-family: 'Marcellus', serif;
+    letter-spacing: 1px;
+}
+
+hr{
+    margin-top: 30px;
+}
+
+.footer-img{
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+.footer-img p{
+    color: #f9f9f9;
+    font-size: 18px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.footer-img img{
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.footer-img .copyright{
+    margin-left: 10px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.copyright a{
+    color: #f9f9f9;
+}
