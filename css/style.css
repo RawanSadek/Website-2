@@ -11,7 +11,7 @@
     height: 90vh;
     margin: 2% 5%;
     padding: 0 30px;
-    background-image: url(../Images/enlarge_woodmart-jewelry-wordpress-theme3.png);
+    background-image: url(../Images/background.png);
     background-size: 100% 100%;
     box-shadow: 1px 1px 20px 10px rgb(186, 186, 186);
     
@@ -453,7 +453,7 @@
 }
 
 .shipping{
-    background-image: url(../Images/Untitled-presentation2.png);
+    background-image: url(../Images/shipping.png);
     background-position: center -66px;
 }
 .service:hover .shipping{
@@ -461,7 +461,7 @@
 }
 
 .best-price{
-    background-image: url(../Images/money.png);
+    background-image: url(../Images/price.png);
     background-position: center -40px;
 }
 .service:hover .best-price{
@@ -469,7 +469,7 @@
 }
 
 .customer-service{
-    background-image: url(../Images/customer2.png);
+    background-image: url(../Images/customer-service.png);
     background-position: center -46px;
 }
 .service:hover .customer-service{
@@ -628,7 +628,7 @@
     padding: 20px;
     overflow: auto;
     background: -webkit-linear-gradient(#b78e9389, #b78e93);
-    background-image: url(../Images/second-hand-jewellery-guide-thbaker.jpg);
+    background-image: url(../Images/footer-background.jpg);
     background-size: 100% 100%;
     position: relative;
 }
@@ -681,6 +681,7 @@
 
 .footer-icons{
     font-size: 35px;
+    margin-top: -25px;
 }
 
 .footer-icons a{
